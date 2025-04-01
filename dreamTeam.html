@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Alliance Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dream Alliance Builder</h1>
+    <p>Constraint: 9s + 3a + e ≤ 35. <br> Also at most 39 members altogether.</p>
+
+    <div class="constraint-bar">
+        <div class="constraint-progress"></div>
+        <div class="constraint-limit"></div>
+        <div class="constraint-value">0/35</div>
+    </div>
+    <div class="error-message">Constraint exceeded! Remove some players.</div>
+
+    <div class="container">
+        <div class="players-container">
+            <h2>Available players</h2>
+            <div class="filter-buttons">
+                <button class="filter-button filter-all" data-group="all">All</button>
+                <button class="filter-button filter-s" data-group="Supreme">Supreme</button>
+                <button class="filter-button filter-a" data-group="Apex">Apex</button>
+                <button class="filter-button filter-e" data-group="Elite">Elite</button>
+                <button class="filter-button filter-o" data-group="Ordinary">Ordinary</button>
+            </div>
+            <div id="available-players"></div>
+        </div>
+
+        <div class="team-container">
+            <h2>Your alliance</h2>
+            <div id="team-stats">
+                <p>Supreme players: <span id="s-count">0</span></p>
+                <p>Apex players: <span id="a-count">0</span></p>
+                <p>Elite players: <span id="e-count">0</span></p>
+                <p>Ordinary players: <span id="o-count">0</span></p>
+                <p>Total players: <span id="total-count">0</span></p>
+            </div>
+            <div id="team-players"></div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+</html>
